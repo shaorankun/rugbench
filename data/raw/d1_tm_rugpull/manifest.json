@@ -1,0 +1,15 @@
+{
+  "dataset": "D1_TM_RugPull",
+  "repo": "https://github.com/mohamadpishdar/RugPull-Defender",
+  "commit_sha": "6e94a4539b3baef332b4ff2ea84742defd0e8085",
+  "commit_date": "2026-11-04T08:14:52Z",
+  "files": [
+    {
+      "repo_path": "data/dataset.xlsx",
+      "local_path": "data/raw/d1_tm_rugpull/dataset.xlsx",
+      "url": "https://raw.githubusercontent.com/mohamadpishdar/RugPull-Defender/6e94a4539b3baef332b4ff2ea84742defd0e8085/data/dataset.xlsx",
+      "size_bytes": 558939,
+      "sha256": "27da51d4f28b8bba73fc70c19dde48891e33741962531f4ea1865929789bb2a3"
+    }
+  ]
+}

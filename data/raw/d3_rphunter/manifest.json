@@ -1,0 +1,12 @@
+{
+  "dataset": "D3_RPHunter",
+  "source": "https://figshare.com/s/e6e7cce0b6574770e7ce",
+  "download_method": "manual_browser_download",
+  "files": [
+    {
+      "local_path": "data/raw/d3_rphunter/Dataset.zip",
+      "size_bytes": 11235454,
+      "sha256": "1e176ece84791edd96d85e73351383cd30df1027442427c6228c3d2e6138fb7e"
+    }
+  ]
+}

@@ -12,17 +12,7 @@ env/
 .env
 .env.*
 
-# Large raw/interim data & trained model binaries
-data/raw/*
-!data/raw/d1_tm_rugpull/
-!data/raw/d2_solrpds/
-!data/raw/d3_rphunter/
-data/raw/d1_tm_rugpull/*
-!data/raw/d1_tm_rugpull/.gitkeep
-data/raw/d2_solrpds/*
-!data/raw/d2_solrpds/.gitkeep
-data/raw/d3_rphunter/*
-!data/raw/d3_rphunter/.gitkeep
+# Large interim data & trained model binaries
 data/interim/*
 !data/interim/.gitkeep
 artifacts/models/*.pkl

@@ -1,0 +1,37 @@
+{
+  "dataset": "D2_SolRPDS",
+  "source": "https://huggingface.co/datasets/DeFiLab/SolRPDS",
+  "revision_sha": "d07588475389d866ac2a7504c23dce58f5e54c88",
+  "event_level_data_available": false,
+  "note": "Hugging Face release contains only yearly pool-level aggregate CSV/JSON files (2021-2024); no event-level swap/liquidity logs.",
+  "files": [
+    {
+      "repo_path": "dataset/CSV/2021.csv",
+      "local_path": "data/raw/d2_solrpds/2021.csv",
+      "url": "https://huggingface.co/datasets/DeFiLab/SolRPDS/resolve/d07588475389d866ac2a7504c23dce58f5e54c88/dataset/CSV/2021.csv",
+      "size_bytes": 518917,
+      "sha256": "cb4f1a9d97f0ca17ca42af57061adb6cd9e063d20c9016a7f11c646679cc03e5"
+    },
+    {
+      "repo_path": "dataset/CSV/2022.csv",
+      "local_path": "data/raw/d2_solrpds/2022.csv",
+      "url": "https://huggingface.co/datasets/DeFiLab/SolRPDS/resolve/d07588475389d866ac2a7504c23dce58f5e54c88/dataset/CSV/2022.csv",
+      "size_bytes": 1122786,
+      "sha256": "5ae3095420a344fc9517c5e463a95aae79662521201f3618e7ac317bab0dad6a"
+    },
+    {
+      "repo_path": "dataset/CSV/2023.csv",
+      "local_path": "data/raw/d2_solrpds/2023.csv",
+      "url": "https://huggingface.co/datasets/DeFiLab/SolRPDS/resolve/d07588475389d866ac2a7504c23dce58f5e54c88/dataset/CSV/2023.csv",
+      "size_bytes": 4676490,
+      "sha256": "405473213c41e23e9aa000e3b13948a9d7cba9adc92774b3db456ac39b52a97a"
+    },
+    {
+      "repo_path": "dataset/CSV/Jan_2024-Nov_2024.csv",
+      "local_path": "data/raw/d2_solrpds/Jan_2024-Nov_2024.csv",
+      "url": "https://huggingface.co/datasets/DeFiLab/SolRPDS/resolve/d07588475389d866ac2a7504c23dce58f5e54c88/dataset/CSV/Jan_2024-Nov_2024.csv",
+      "size_bytes": 28872407,
+      "sha256": "0e034bf1bc6f3e63bdba4ec5cccf1264e53abbdcc657e29b4562ea06fc0d201c"
+    }
+  ]
+}
