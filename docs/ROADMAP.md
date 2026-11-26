@@ -50,10 +50,10 @@
 - [ ] **Bước 2.5 (Ưu tiên nộp tuần này): Hoàn thành Báo cáo Tuần 4 (`Detailed Method & Test Plan`)**
   - Viết bằng tiếng Anh (12–18 trang) theo `docs/IS355_Week4_Project_Report_Template.docx` và `docs/IS355_Week4_Project_Requirements_VIE.docx`.
   - Gồm: bảng phản hồi feedback Tuần 3, sơ đồ quy trình cập nhật, đặc tả từng bước (có mã giả, công thức, tham số, schema Input/Output, kiểm tra đúng), đặc tả Smart Contract (biến, bảng hàm, ước tính gas EVM), giả thuyết `H1..Hk`, đủ 7 nhóm kịch bản test `T1–T7`, tính toán số lượt chạy + ngân sách Sepolia, kết quả dự kiến (+ chạy thử pilot nếu kịp), lịch kiểm thử theo tuần với 4 mốc `M1–M4`.
-- [ ] **Bước 3: Làm sạch dữ liệu & tạo bảng đặc trưng (`src/data/` → `data/processed/`)**
-  - **Làm D1 trước:** bỏ `project end date` và cột định danh, ép kiểu số 6 cột đang ở dạng chuỗi, `log1p`, one-hot `Blockchain`/`Blockchain Type`, giữ nguyên `NaN` → xuất `data/processed/features_d1.csv`.
-  - **Làm D3 thứ hai:** giải nén `Rug-Bytecode.zip` & `Normal-Bytecode.zip`, chạy `src/data/build_d3_features.py` (tách metadata compiler, trích 170+ đặc trưng opcode/selector/size/era, gán `dup_group`, loại 9 token xung đột nhãn) → xuất `data/processed/d3_features.csv` + `d3_features_groups.json`.
-  - **Làm D2 thứ ba:** gom 4 file CSV, nhóm theo `MINT`, xuất 2 bản: `features_d2_orig.csv` (đủ cột gốc để tái lập bài báo [1]) và `features_d2_noleak.csv` (bỏ các cột rút thanh khoản & `LAST_*` theo phương án dự phòng I2).
+- [x] **Bước 3: Làm sạch dữ liệu & tạo bảng đặc trưng (`src/data/` → `data/processed/`)**
+  - **D1 (`src/data/clean_d1.py`):** xuất `features_d1.csv` (1.000 dòng × 33 features) + `d1_schema.json`.
+  - **D2 (`src/data/clean_d2.py`):** xóa 4 dòng BOM rác → đúng 63.520 pool (116.304 dòng), xuất `features_d2_orig.csv` (5 features) + `features_d2_noleak.csv` (6 features, bỏ cột rút thanh khoản & `LAST_*`) + `d2_schema.json`.
+  - **D3 (`src/data/build_d3_features.py`):** dịch ngược 2.320 bytecode (185 features), khớp chính xác 1.146 clone & 6 nhóm xung đột (391 token, loại 9 rug), xuất `d3_features.csv`, `d3_features_clean.csv` (2.311 dòng) + `d3_features_groups.json`.
 
 ---
 

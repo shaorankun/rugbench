@@ -1,0 +1,60 @@
+{
+  "dataset": "D2_SolRPDS",
+  "event_level_available": false,
+  "i2_mode": "fallback_remove_leakage_columns",
+  "n_rows_raw": 116308,
+  "n_bom_rows_dropped": 4,
+  "n_exact_duplicates_dropped": 0,
+  "n_rows_clean": 116304,
+  "n_unique_pools": 63520,
+  "n_unique_mints": 33358,
+  "rows_per_year": {
+    "2021": 1702,
+    "2022": 3694,
+    "2023": 15476,
+    "2024": 95432
+  },
+  "label_counts_by_row": {
+    "inactive_1": 22555,
+    "active_0": 93749
+  },
+  "major_quote_rows": 42139,
+  "meta_columns": [
+    "row_id",
+    "pool_address",
+    "mint",
+    "is_major_quote",
+    "source_year",
+    "first_activity_ts",
+    "label"
+  ],
+  "orig_feature_columns": [
+    "total_added_liquidity_log1p",
+    "total_removed_liquidity_log1p",
+    "num_liquidity_adds_log1p",
+    "num_liquidity_removes_log1p",
+    "add_to_remove_ratio_log1p"
+  ],
+  "noleak_feature_columns": [
+    "total_added_liquidity_log1p",
+    "num_liquidity_adds_log1p",
+    "avg_added_per_add_log1p",
+    "first_activity_hour",
+    "first_activity_dayofweek",
+    "first_activity_month"
+  ],
+  "dropped_leakage_columns": [
+    "LAST_POOL_ACTIVITY_TIMESTAMP",
+    "LAST_SWAP_TIMESTAMP",
+    "LAST_SWAP_TX_ID"
+  ],
+  "additional_removed_in_noleak": [
+    "TOTAL_REMOVED_LIQUIDITY",
+    "NUM_LIQUIDITY_REMOVES",
+    "ADD_TO_REMOVE_RATIO"
+  ],
+  "output_files": {
+    "orig": "data/processed/features_d2_orig.csv",
+    "noleak": "data/processed/features_d2_noleak.csv"
+  }
+}

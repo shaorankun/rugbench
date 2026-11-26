@@ -1,0 +1,89 @@
+{
+  "dataset": "D1_TM_RugPull",
+  "source_file": "data/raw/d1_tm_rugpull/dataset.xlsx",
+  "output_file": "data/processed/features_d1.csv",
+  "n_rows_raw": 1000,
+  "n_exact_duplicates_dropped": 0,
+  "n_rows_clean": 1000,
+  "label_counts": {
+    "rug_pull_1": 599,
+    "legitimate_0": 401
+  },
+  "meta_columns": [
+    "row_id",
+    "start_date",
+    "label"
+  ],
+  "feature_columns": [
+    "max_price_q1_log1p",
+    "max_price_q2_log1p",
+    "max_price_q3_log1p",
+    "max_price_q4_log1p",
+    "n_transactions_log1p",
+    "token_concentration_log1p",
+    "total_variance_log1p",
+    "variance_holders_gt1pct_log1p",
+    "token_balance_log1p",
+    "first_deposits_log1p",
+    "google_title_day1_log1p",
+    "google_title_mid_log1p",
+    "google_website_day1_log1p",
+    "google_website_mid_log1p",
+    "google_x_day1_log1p",
+    "google_x_mid_log1p",
+    "has_website",
+    "has_x_profile",
+    "chain_arbi",
+    "chain_base",
+    "chain_bsc",
+    "chain_crono",
+    "chain_eth",
+    "chain_ftm",
+    "chain_polygon",
+    "chain_snow",
+    "chain_type_dag",
+    "chain_type_fraud_proofs",
+    "chain_type_poa",
+    "chain_type_pos",
+    "chain_type_pos_lachesis",
+    "chain_type_posa",
+    "chain_type_snow"
+  ],
+  "n_features": 33,
+  "dropped_columns": [
+    "Project Title",
+    "Sign",
+    "Smart Contract (online)",
+    "smart Contract (offline)",
+    "project end date"
+  ],
+  "log1p_columns": [
+    "max_price_q1_log1p",
+    "max_price_q2_log1p",
+    "max_price_q3_log1p",
+    "max_price_q4_log1p",
+    "n_transactions_log1p",
+    "token_concentration_log1p",
+    "total_variance_log1p",
+    "variance_holders_gt1pct_log1p",
+    "token_balance_log1p",
+    "first_deposits_log1p",
+    "google_title_day1_log1p",
+    "google_title_mid_log1p",
+    "google_website_day1_log1p",
+    "google_website_mid_log1p",
+    "google_x_day1_log1p",
+    "google_x_mid_log1p"
+  ],
+  "missing_values_kept_for_fold_imputation": {
+    "token_balance": 1,
+    "first_deposits": 1,
+    "google_website_day1": 2,
+    "google_website_mid": 2
+  },
+  "start_date_range": [
+    "2002-07-18",
+    "2025-01-18"
+  ],
+  "n_start_date_before_2015": 5
+}
