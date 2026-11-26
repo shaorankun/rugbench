@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Environment & secrets (never commit reporter private keys)
+.env
+.env.*
+
+# Large raw/interim data & trained model binaries
+data/raw/*
+!data/raw/d1_tm_rugpull/
+!data/raw/d2_solrpds/
+!data/raw/d3_rphunter/
+data/raw/d1_tm_rugpull/*
+!data/raw/d1_tm_rugpull/.gitkeep
+data/raw/d2_solrpds/*
+!data/raw/d2_solrpds/.gitkeep
+data/raw/d3_rphunter/*
+!data/raw/d3_rphunter/.gitkeep
+data/interim/*
+!data/interim/.gitkeep
+artifacts/models/*.pkl
+
+# Ape / Vyper build artifacts
+contracts/.build/
+contracts/.cache/
+
+# OS & IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
